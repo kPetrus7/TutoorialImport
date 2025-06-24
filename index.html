@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial IMPORTAÇÃO </title>
+    <link href="css/tailwind-optimized.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-800 text-white shadow-lg fixed w-full z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold">
+                    <a href="#inicio" class="text-white hover:text-blue-200">Tutorial IMPORTAÇÃO </a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="text-white nav-link hover:text-blue-200 px-2 py-1 rounded">Início</a>
+                    <a href="#primeiros-passos" class="text-white nav-link hover:text-blue-200 px-2 py-1 rounded">Primeiros Passos</a>
+                    <a href="#processo-importacao" class="text-white nav-link hover:text-blue-200 px-2 py-1 rounded">Processo de Importação</a>
+                    <a href="#funcionalidades" class="text-white nav-link hover:text-blue-200 px-2 py-1 rounded">Funcionalidades</a>
+                    <a href="#solucao-problemas" class="text-white nav-link hover:text-blue-200 px-2 py-1 rounded">Solução de Problemas</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 pb-4 px-4">
+            <a href="#inicio" class="block py-2 px-4 text-white hover:bg-blue-600 rounded">Início</a>
+            <a href="#primeiros-passos" class="block py-2 px-4 text-white hover:bg-blue-600 rounded">Primeiros Passos</a>
+            <a href="#processo-importacao" class="block py-2 px-4 text-white hover:bg-blue-600 rounded">Processo de Importação</a>
+            <a href="#funcionalidades" class="block py-2 px-4 text-white hover:bg-blue-600 rounded">Funcionalidades</a>
+            <a href="#solucao-problemas" class="block py-2 px-4 text-white hover:bg-blue-600 rounded">Solução de Problemas</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-20">
+        <!-- Início -->
+        <section id="inicio" class="max-w-4xl mx-auto mb-16 section">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Tutorial de Uso da Planilha IMPORTAÇÃO </h1>
+                <p class="text-xl text-gray-600">Guia completo para automatizar a importação de dados financeiros para o sistema Contimatic</p>
+            </div>
+
+            <div class="prose lg:prose-xl mb-12 max-w-none">
+                <p>
+                    Este tutorial foi desenvolvido para auxiliar os usuários da planilha "IMPORTAÇÃO", 
+                    uma ferramenta criada para automatizar a importação de dados financeiros para o sistema Contimatic. 
+                    O documento apresenta instruções passo a passo sobre como utilizar as principais funcionalidades da planilha.
+                </p>
+            </div>
+
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 mb-2">Requisitos</h2>
+                <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                <ul class="list-disc pl-6 space-y-2 text-lg">
+                    <li>Microsoft Excel com suporte a macros (arquivo .xlsm)</li>
+                    <li>Acesso ao sistema Contimatic (para importação completa)</li>
+                    <li>Permissões adequadas para as pastas de destino dos arquivos gerados</li>
+                </ul>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Como usar este tutorial</h3>
+                <p class="text-gray-700">
+                    Este tutorial está organizado em seções que cobrem desde os primeiros passos até a solução de problemas comuns.
+                    Utilize o menu de navegação para acessar diretamente a seção que você precisa consultar.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Primeiros Passos</h3>
+                    <p class="text-gray-700 mb-4">Aprenda como abrir a planilha e entender sua interface principal.</p>
+                    <a href="#primeiros-passos" class="text-blue-600 hover:text-blue-800 font-medium">Saiba mais →</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Processo de Importação</h3>
+                    <p class="text-gray-700 mb-4">Guia passo a passo para realizar importações de dados.</p>
+                    <a href="#processo-importacao" class="text-blue-600 hover:text-blue-800 font-medium">Saiba mais →</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Funcionalidades Adicionais</h3>
+                    <p class="text-gray-700 mb-4">Explore recursos extras como limpeza de dados e modo administrador.</p>
+                    <a href="#funcionalidades" class="text-blue-600 hover:text-blue-800 font-medium">Saiba mais →</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Solução de Problemas</h3>
+                    <p class="text-gray-700 mb-4">Encontre soluções para problemas comuns durante o uso da planilha.</p>
+                    <a href="#solucao-problemas" class="text-blue-600 hover:text-blue-800 font-medium">Saiba mais →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primeiros Passos -->
+        <section id="primeiros-passos" class="max-w-4xl mx-auto mb-16 section">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-2">Primeiros Passos</h2>
+                <div class="w-20 h-1 bg-blue-600 mb-2"></div>
+                <p class="text-lg text-gray-600">Aprenda como começar a utilizar a planilha IMPORTAÇÃO </p>
+            </div>
+
+            <div class="prose lg:prose-xl mb-12 max-w-none">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Abrindo a Planilha</h3>
+                <ol class="list-decimal pl-6 space-y-3">
+                    <li>Abra o arquivo "3- IMPORTAÇÃO .xlsm"</li>
+                    <li>Se aparecer um aviso de segurança sobre macros, clique em "Habilitar Conteúdo"</li>
+                    <li>
+                        Ao abrir a planilha pela primeira vez, será exibida uma mensagem perguntando se você deseja ver o tutorial em vídeo
+                        <ul class="list-disc pl-6 mt-2">
+                            <li>Clique em "Sim" para abrir o vídeo tutorial no YouTube</li>
+                            <li>Clique em "Não" para continuar sem assistir ao vídeo</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-12">
+                <h3 class="text-xl font-bold text-yellow-800 mb-2">Dica Importante</h3>
+                <p class="text-gray-700">
+                    É recomendável assistir ao vídeo tutorial na primeira vez que utilizar a planilha. 
+                    Ele fornece uma visão geral das funcionalidades e pode ajudar a compreender melhor o fluxo de trabalho.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Interface Principal</h3>
+                <p class="text-lg mb-4">
+                    A planilha possui vários botões na aba "COLA" que controlam as principais funcionalidades:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">INDIVIDUAL</h4>
+                    <p>Seleciona o modo de importação individual</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">MULTIPLO</h4>
+                    <p>Seleciona o modo de importação múltipla</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">TOTAL</h4>
+                    <p>Ativa/desativa o modo de importação completa automatizada</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">LIMPAR</h4>
+                    <p>Limpa os dados da planilha para uma nova importação</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">TUTORIAL</h4>
+                    <p>Abre o vídeo tutorial no YouTube</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">GERAR</h4>
+                    <p>Inicia o processo de importação</p>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+                    <h4 class="font-bold text-blue-800">ADMINISTRADOR</h4>
+                    <p>Ativa/desativa o modo administrador (requer senha)</p>
+                </div>
+            </div>
+
+            <div class="flex justify-end">
+                <a href="#inicio" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition mr-4">
+                    ↑ Voltar para Início
+                </a>
+                <a href="#processo-importacao" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                    Processo de Importação →
+                </a>
+            </div>
+        </section>
+
+        <!-- Processo de Importação -->
+        <section id="processo-importacao" class="max-w-4xl mx-auto mb-16 section">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-2">Processo de Importação</h2>
+                <div class="w-20 h-1 bg-blue-600 mb-2"></div>
+                <p class="text-lg text-gray-600">Guia passo a passo para realizar importações de dados</p>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Passo 1: Preparar os Dados</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>
+                            Na aba "COLA", insira os dados financeiros a serem importados
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Coluna C: Data de vencimento</li>
+                                <li>Coluna D: Descrição</li>
+                                <li>Coluna E: Número da NF</li>
+                                <li>Coluna F: Valor do documento</li>
+                                <li>Coluna G: Acréscimos</li>
+                                <li>Coluna H: Juros</li>
+                                <li>Coluna I: Descontos</li>
+                                <li>Coluna J: Valor líquido</li>
+                                <li>Coluna K: Conta de pagamento</li>
+                                <li>Coluna L: Loja</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Certifique-se de que todos os dados estão preenchidos corretamente, especialmente:
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Datas no formato correto</li>
+                                <li>Valores numéricos nas colunas de valores</li>
+                                <li>Descrições dos fornecedores existentes no cadastro</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Passo 2: Selecionar o Tipo de Importação</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Escolha entre os modos de importação disponíveis:</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
+                        <h4 class="text-xl font-bold text-blue-800 mb-2">INDIVIDUAL</h4>
+                        <p class="text-gray-700 mb-3">Clique no botão "INDIVIDUAL" para processar cada lançamento separadamente</p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Recomendado quando há juros, descontos ou tarifas a serem tratados individualmente</li>
+                            <li>Permite maior controle sobre cada lançamento</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                        <h4 class="text-xl font-bold text-green-800 mb-2">MULTIPLO</h4>
+                        <p class="text-gray-700 mb-3">Clique no botão "MULTIPLO" para processar lançamentos em grupo</p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Mais eficiente para importações em lote</li>
+                            <li>Agrupa lançamentos relacionados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Passo 3: Opção de Importação Completa (Opcional)</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Se desejar que o sistema realize a importação completa automaticamente:</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Clique no botão "TOTAL" (o botão ficará com transparência parcial quando ativado)</li>
+                        <li>Na primeira vez que usar esta função, será exibido um aviso sobre possíveis erros</li>
+                        <li>Esta opção automatiza todo o processo até o sistema Contimatic</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Observação Importante</h4>
+                    <p class="text-gray-700">
+                        A importação completa depende da configuração correta do sistema Contimatic e pode estar 
+                        sujeita a erros se houver mudanças no sistema.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Passo 4: Iniciar o Processo</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <ol class="list-decimal pl-6 space-y-3">
+                        <li>Clique no botão "GERAR" para iniciar o processo de importação</li>
+                        <li>
+                            O sistema realizará as seguintes operações:
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Verificação de linhas vazias</li>
+                                <li>Ajuste de formatos de dados</li>
+                                <li>Verificação de fornecedores cadastrados</li>
+                                <li>Preparação dos dados para importação</li>
+                                <li>Geração dos lançamentos na aba "IMPORT"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Se houver fornecedores não cadastrados:
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Será exibida uma mensagem informando que existem fornecedores para cadastrar</li>
+                                <li>Você será direcionado para a aba "CADASTRO" para incluir os novos fornecedores</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Se todos os fornecedores estiverem cadastrados e o modo "TOTAL" estiver ativado:
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>O sistema prosseguirá com a importação completa para o Contimatic</li>
+                                <li>Será criado ou atualizado um arquivo Excel na pasta do sistema Contimatic</li>
+                            </ul>
+                        </li>
+                        <li>Ao final do processo, será exibida uma mensagem de confirmação ":)"</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <a href="#primeiros-passos" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">
+                    ← Primeiros Passos
+                </a>
+                <a href="#funcionalidades" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                    Funcionalidades Adicionais →
+                </a>
+            </div>
+        </section>
+
+        <!-- Funcionalidades Adicionais -->
+        <section id="funcionalidades" class="max-w-4xl mx-auto mb-16 section">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-2">Funcionalidades Adicionais</h2>
+                <div class="w-20 h-1 bg-blue-600 mb-2"></div>
+                <p class="text-lg text-gray-600">Explore recursos extras da planilha IMPORTAÇÃO </p>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Limpeza de Dados</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Para limpar os dados e iniciar uma nova importação:</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Clique no botão "LIMPAR"</li>
+                        <li>Todos os dados nas abas "COLA", "CONCILIACAO" e "IMPORT" serão limpos</li>
+                        <li>Os cabeçalhos e configurações serão mantidos</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Controle de Numeração</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Para alterar o número do próximo lançamento:</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Clique na célula M2 na aba "COLA"</li>
+                        <li>Digite o número desejado para o próximo lançamento</li>
+                        <li>O sistema atualizará automaticamente a numeração para os próximos lançamentos</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Modo Administrador</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Para ativar o modo administrador (permite edição de áreas protegidas):</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Clique no botão "ADMINISTRADOR"</li>
+                        <li>Digite a senha de administrador quando solicitado</li>
+                        <li>Quando o modo administrador estiver ativo, o botão ficará com transparência parcial</li>
+                        <li>Para desativar o modo administrador, clique novamente no botão</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-yellow-800 mb-2">Atenção</h4>
+                    <p class="text-gray-700">
+                        O modo administrador deve ser utilizado com cautela, pois permite a edição de áreas protegidas 
+                        da planilha que podem afetar o funcionamento da ferramenta.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Cadastro de Fornecedores</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Se for necessário cadastrar novos fornecedores:</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Acesse a aba "CADASTRO"</li>
+                        <li>Localize a primeira linha vazia na coluna B</li>
+                        <li>Insira o nome do fornecedor na coluna B</li>
+                        <li>Preencha o código do fornecedor na coluna C</li>
+                        <li>Se necessário, preencha as informações adicionais nas demais colunas</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Reiniciar a Ferramenta</h3>
+                <div class="prose lg:prose-xl mb-6 max-w-none">
+                    <p>Se ocorrerem problemas ou para redefinir as configurações:</p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Clique com o botão direito em qualquer área da planilha</li>
+                        <li>Selecione "Reset" no menu de contexto</li>
+                        <li>Será perguntado se deseja manter as anotações</li>
+                        <li>A ferramenta será reiniciada com as configurações padrão</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <a href="#processo-importacao" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">
+                    ← Processo de Importação
+                </a>
+                <a href="#solucao-problemas" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                    Solução de Problemas →
+                </a>
+            </div>
+        </section>
+
+        <!-- Solução de Problemas -->
+        <section id="solucao-problemas" class="max-w-4xl mx-auto mb-16 section">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-blue-800 mb-2">Solução de Problemas Comuns</h2>
+                <div class="w-20 h-1 bg-blue-600 mb-2"></div>
+                <p class="text-lg text-gray-600">Encontre soluções para problemas frequentes durante o uso da planilha</p>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">Dicas e Boas Práticas</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-2">Verifique os dados antes de importar</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Certifique-se de que todas as datas estão no formato correto</li>
+                            <li>Confirme se os valores estão corretos e nas colunas apropriadas</li>
+                            <li>Verifique se todos os fornecedores estão cadastrados</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-2">Backup regular</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Faça cópias de segurança da planilha regularmente</li>
+                            <li>Mantenha versões anteriores em caso de necessidade de recuperação</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-2">Tratamento de erros</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Se ocorrerem erros durante a importação, verifique:</li>
+                            <li>Formato dos dados</li>
+                            <li>Cadastro de fornecedores</li>
+                            <li>Permissões de acesso às pastas do sistema</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-2">Importação em lotes menores</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Para grandes volumes de dados, considere dividir em lotes menores</li>
+                            <li>Isso facilita a identificação e correção de possíveis erros</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-2">Modo de importação adequado</h4>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Use o modo MULTIPLO para lançamentos com juros, descontos ou tarifas</li>
+                            <li>Use o modo INDIVIDUAL para lançamentos simples em lote</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-red-600 mb-4">Problemas Específicos</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold text-red-700 mb-2">Mensagem "Planilha vazia!"</h4>
+                        <ul class="list-disc pl-6 text-black space-y-2">
+                            <li>Verifique se há dados inseridos na aba "COLA" a partir da linha 2</li>
+                            <li>Certifique-se de que a coluna C (data de vencimento) está preenchida</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold text-red-700 mb-2">Mensagem "Selecione o Layout de Importação!"</h4>
+                        <ul class="list-disc pl-6 text-black space-y-2">
+                            <li>Clique em um dos botões de modo de importação (INDIVIDUAL ou MULTIPLO)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold text-red-700 mb-2">Mensagem "Existem fornecedores para serem cadastrados!"</h4>
+                        <ul class="list-disc pl-6 text-black space-y-2">
+                            <li>Acesse a aba "CADASTRO"</li>
+                            <li>Cadastre os fornecedores indicados</li>
+                            <li>Retorne à aba "COLA" e tente novamente</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold text-red-700 mb-2">Planilha travada ou protegida</h4>
+                        <ul class="list-disc pl-6 text-blck space-y-2">
+                            <li>Se você precisar editar áreas protegidas, ative o modo administrador</li>
+                            <li>Se não tiver a senha de administrador, contate o responsável pela planilha</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold text-red-700 mb-2">Erro na importação completa</h4>
+                        <ul class="list-disc pl-6 text-black space-y-2">
+                            <li>Verifique se o caminho para a pasta do Contimatic está correto</li>
+                            <li>Confirme se você tem permissões de acesso à pasta</li>
+                            <li>Verifique se o arquivo de destino não está aberto em outro programa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
+                <h3 class="text-xl font-bold text-blue-800 mb-2">Conclusão</h3>
+                <p class="text-black">
+                    Esta planilha foi desenvolvida para facilitar o processo de importação de dados financeiros para o sistema Contimatic. 
+                    Seguindo este tutorial, você poderá utilizar todas as funcionalidades disponíveis de forma eficiente e segura.
+                </p>
+                <p class="text-black mt-4">
+                    Para dúvidas adicionais ou suporte técnico, consulte o administrador responsável pela planilha 
+                    ou assista ao vídeo tutorial disponível através do botão "TUTORIAL".
+                </p>
+            </div>
+
+            <div class="flex justify-between">
+                <a href="#funcionalidades" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">
+                    ← Funcionalidades Adicionais
+                </a>
+                <a href="#inicio" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                    Voltar para Início
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Tutorial IMPORTAÇÃO </h3>
+                    <p class="text-gray-300 mt-2">Guia completo para uso da planilha de importação</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-300">&copy; <span id="current-year"></span> Todos os direitos reservados</p>
+                    <p class="text-gray-400 mt-1">Desenvolvido para facilitar o uso da planilha IMPORTAÇÃO </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
